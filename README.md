@@ -2,4 +2,4 @@
 Team Members
 1. Luke Norris
 2. Raghuram Chepuri
-3. Angelo S
+3. Angelo Straight

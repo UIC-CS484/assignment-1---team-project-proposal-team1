@@ -1,15 +1,15 @@
 ## Team Members
 1. Luke Norris
 - 
-- Luke Norris's github [https://github.com/lnorri4]
+- [Luke Norris's github] (https://github.com/lnorri4)
 
 2. Raghuram Chepuri
 - rchepu2@uic.edu
-- Raghuram Chepuri's github [https://github.com/rchepu2]
+- [Raghuram Chepuri's github] (https://github.com/rchepu2)
 
 3. Angelo Straight
 - 
-- Angelo Straight's github [https://github.com/AngeloStraight]
+- [Angelo Straight's github] (https://github.com/AngeloStraight)
 
 Team 1 Assignment-1: [Assignment-1](https://uic-cs484.github.io/assignment-1---team-project-proposal-team1/proposal.html) 
 

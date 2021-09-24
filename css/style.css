@@ -1,11 +1,13 @@
 /** Presentation Logic**/
 
 html { height:100%; }
+
 body { 
     position:absolute; top:0; bottom:0; right:0; left:0; 
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container{
@@ -40,7 +42,6 @@ header{
 }
 
 footer{
-    height: 25%;
     background-color: #DADADA;
     width: 100%;
     display: flex;
@@ -48,10 +49,42 @@ footer{
     justify-content: space-around;
 }
 
+.footer-box-heading{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+ul{
+    margin-top: 0.5rem;
+}
+
+ul.dashed {
+    list-style-type: none;
+}
+
+ul.dashed > li:before {
+    content: "-";
+}
+
+li{
+    margin-left: -1rem;
+    margin-top: 1rem;
+}
+
 .footer_box{
     margin: 1.5%;
     background-color: #BBBBBB;
     width: 31%;
+}
+
+.links{
+    margin-left: 1rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
 }
 
             /* smaller than 1024 pixels */
@@ -95,7 +128,6 @@ footer{
     .footer_box{
         margin: 2.5%;
         width: 95%;
-        height: 20vh;
     }
 }
 /* smaller than 480 pixels */

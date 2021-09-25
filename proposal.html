@@ -7,15 +7,15 @@
         /** JS Code **/
         var count = 0
         function myFunction() {
-            if (count % 2 == 0){
+            if (count % 2 == 0) {
                 document.getElementById("body_id").style.fontSize = "x-large";
                 ++count;
             }
-            else{
+            else {
                 document.getElementById("body_id").style.fontSize = "medium";
                 ++count;
             }
-            
+
         }
     </script>
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,7 +24,7 @@
 <body id="body_id">
     <div id="container">
         <header>
-            <h1>N'you's</h1>
+            <h1>One News</h1>
         </header>
         <div class="middle-row">
             <section class="middlebox">
@@ -41,55 +41,60 @@
                     </li>
                     <li>&nbsp; Identify all entries/tables you might use in your database along with their respective
                         attributes
-                        <div class="middlebox-item"><table>
-                            <tr>
-                            <th id="col_user1">user_id</th>
-                            <th id="col_user2">password</th> 
-                            <th id="col_user3">user_name</th>
-                            <th id="col_user4">age</th>
-                            <th id="col_user5">city</th>
-                            </tr>
-                            <tr>
-                            <td>varchar(25)  pk</td>
-                            <td>varchar(12)</td> 
-                            <td>varchar(25)</td>
-                            <td>int</td>
-                            <td>varchar(25)</td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table>
-                            <tr>
-                            <th id="col1">article_id</th>
-                            <th id="col2">title</th> 
-                            <th id="col3">publisher</th>
-                            <th id="col4">year</th>
-                            </tr>
-                            <tr>
-                            <td>varchar(25)  pk</td>
-                            <td>varchar(12)</td> 
-                            <td>varchar(25)</td>
-                            <td>int</td>
-                            </tr>
-                        </table></div>
+                        <div class="middlebox-item">
+                            <table>
+                                <tr>
+                                    <th id="col_user1">uid</th>
+                                    <th id="col_user2">pwd</th>
+                                    <th id="col_user3">uname</th>
+                                    <th id="col_user4">age</th>
+                                    <th id="col_user5">city</th>
+                                </tr>
+                                <tr>
+                                    <td>varchar pk</td>
+                                    <td>varchar</td>
+                                    <td>varchar</td>
+                                    <td>int</td>
+                                    <td>varchar</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table>
+                                <tr>
+                                    <th id="col1">article_id</th>
+                                    <th id="col2">title</th>
+                                    <th id="col3">publisher</th>
+                                    <th id="col4">year</th>
+                                </tr>
+                                <tr>
+                                    <td>varchar pk</td>
+                                    <td>varchar</td>
+                                    <td>varchar</td>
+                                    <td>int</td>
+                                </tr>
+                            </table>
+                        </div>
                     </li>
                 </ul>
             </section>
             <section class="middlebox">
                 <ul class="dashed">
                     <li>&nbsp; Who will potentially use this site?
-                        <div class="middlebox-item">Adults (and perhaps teenagers) who are looking to get a cohesive selection of latest news (edited)</div>
+                        <div class="middlebox-item">Adults (and perhaps teenagers) who are looking to get a cohesive
+                            selection of latest news (edited)</div>
                     </li>
                     <li>&nbsp; What are the goals of your sight, provide a minimum of two goal?
                         <div class="middlebox-item">Help the user (book mark articles and preferences)</div>
-                        <div class="middlebox-item">Provide a variety of latest news topics (politics, sports, culture, current events, international
+                        <div class="middlebox-item">Provide a variety of latest news topics (politics, sports, culture,
+                            current events, international
                             news) (edited)</div>
                     </li>
                     <li>&nbsp; What data will you collect from authenticated site users?
                         <div class="middlebox-item">Topics by top ratings</div>
                     </li>
                     <li>&nbsp; Why did your team select this topic?
-                        <div class="middlebox-item">We though that being able to combine multiple APIs into a single app would provide a wide variety
+                        <div class="middlebox-item">We though that being able to combine multiple APIs into a single app
+                            would provide a wide variety
                             of new sources so people won't have to go to so many websites</div>
                     </li>
                 </ul>
@@ -129,8 +134,9 @@
                     <li>&nbsp; Dark Mode/Light Mode</li>
                     <li>&nbsp; Text font size change</li>
                     <li>&nbsp; Mobile/Ipad views</li>
+                    <li>&nbsp Click button to change font size: <button type="button"
+                            onclick="myFunction()">+/-</button></li>
                 </ul>
-                <button type="button" onclick="myFunction()">change font size</button>
             </div>
         </footer>
     </div>

@@ -3,10 +3,25 @@
 
 <head>
     <title>Group 1 Project Proposal</title>
+    <script>
+        /** JS Code **/
+        var count = 0
+        function myFunction() {
+            if (count % 2 == 0){
+                document.getElementById("body_id").style.fontSize = "x-large";
+                ++count;
+            }
+            else{
+                document.getElementById("body_id").style.fontSize = "medium";
+                ++count;
+            }
+            
+        }
+    </script>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body id="body_id">
     <div id="container">
         <header>
             <h1>N'you's</h1>
@@ -26,9 +41,37 @@
                     </li>
                     <li>&nbsp; Identify all entries/tables you might use in your database along with their respective
                         attributes
-                        <div class="middlebox-item">Source (news company), Topic (Current events, culture, international news, etc...),
-                            Publication date, User rating (1 to 5 stars, like or dislike, etc), User info (username,
-                            email Id, phone number, age, preferences, etc)</div>
+                        <div class="middlebox-item"><table>
+                            <tr>
+                            <th id="col_user1">user_id</th>
+                            <th id="col_user2">password</th> 
+                            <th id="col_user3">user_name</th>
+                            <th id="col_user4">age</th>
+                            <th id="col_user5">city</th>
+                            </tr>
+                            <tr>
+                            <td>varchar(25)  pk</td>
+                            <td>varchar(12)</td> 
+                            <td>varchar(25)</td>
+                            <td>int</td>
+                            <td>varchar(25)</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            <tr>
+                            <th id="col1">article_id</th>
+                            <th id="col2">title</th> 
+                            <th id="col3">publisher</th>
+                            <th id="col4">year</th>
+                            </tr>
+                            <tr>
+                            <td>varchar(25)  pk</td>
+                            <td>varchar(12)</td> 
+                            <td>varchar(25)</td>
+                            <td>int</td>
+                            </tr>
+                        </table></div>
                     </li>
                 </ul>
             </section>
@@ -87,6 +130,7 @@
                     <li>&nbsp; Text font size change</li>
                     <li>&nbsp; Mobile/Ipad views</li>
                 </ul>
+                <button type="button" onclick="myFunction()">change font size</button>
             </div>
         </footer>
     </div>

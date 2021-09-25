@@ -38,7 +38,6 @@ We'll follow agile practices. Our team will sync up every day to give the status
 - Jira for managing tasks
 
 ## General Responsibilities
-
-Raghuram: Backend and Front end
-Luke: Backend and Database
-Angelo: Front end and Database
+- Raghuram: Backend and Front end
+- Luke: Backend and Database
+- Angelo: Front end and Database

@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example Page on Threat Modeling</title>
+        <title>Group 1 Project Proposal</title>
+        <script>
+            /** JS Code **/
+            var count = 0
+            function myFunction() {
+                if (count % 2 == 0){
+                    document.getElementById("body_id").style.fontSize = "x-large";
+                    ++count;
+                }
+                else{
+                    document.getElementById("body_id").style.fontSize = "medium";
+                    ++count;
+                }
+                
+            }
+        </script>
         <link rel="stylesheet" href="./css/style.css" />
     </head>
-    <body>
+    <body id="body_id">
         <div id="container">
             <header>
                 <h1>N'you's</h1>
@@ -113,6 +128,7 @@
                         <li>&nbsp; Text font size change</li>
                         <li>&nbsp; Mobile/Ipad views</li>
                     </ul>
+                    <button type="button" onclick="myFunction()">Set font size</button>
                 </div>
             </footer>
         </div><!--Closing container-->

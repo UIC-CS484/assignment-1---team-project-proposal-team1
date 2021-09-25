@@ -1,3 +1,4 @@
+# One News
 ## Team Members
 1. Luke Norris
 - lnorri4@uic.edu
@@ -17,13 +18,13 @@ Team 1 Assignment-1: [Assignment-1](https://uic-cs484.github.io/assignment-1---t
 
 Our project will use a main branch which contains the main version of our project. Basically, code on the main branch is equivalent to the production software
 
-We'll divide all the work into tasks which will be created as tickets on a Kanban board. Each ticket will have a number and a branch will be created with that ticket number from the main branch. 
+We'll divide all the work into tasks which will be created as tickets on a Kanban board preferrably JIRA. Each ticket will have a number and a branch will be created with that ticket number from the main branch. 
 
-All the tickets will be marked as 'OPEN' until they are picked up.
-Once the team member starts working on the task, they'll mark that ticket as 'IN-PROGRESS'.
-Once the development is completed for that task and tested by the person who developed it, it'll be marked as 'READY FOR CODE-REVIEW', so that another team member can review the code. 
-After review, it'll be marked as 'READY FOR TESTING'  where in a another team member will pick it up and test the code
-Once the testing is done and verified, the ticket will be marked as 'DONE' and the branch will be merged to the main branch.
+- All the tickets will be marked as 'OPEN' until they are picked up.
+- Once the team member starts working on the task, they'll mark that ticket as 'IN-PROGRESS' and creates a branch from main with the same name as the ticket number
+- Once the development is completed for that task and tested by the person who developed it, it'll be marked as 'READY FOR CODE-REVIEW', so that another team member can review the code. 
+- After the review, it'll be marked as 'READY FOR TESTING'  where in an another team member will pick it up and test the code
+- Once the testing is done and verified, the ticket will be marked as 'DONE' and the branch will be merged to the main branch.
 
 Any fixes on the main branch will be done on branches named 'hot-fix' which usually requires immediate fixes and will be merged to the main branch.
 

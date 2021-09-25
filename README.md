@@ -8,7 +8,7 @@
 - [Raghuram Chepuri's github](https://github.com/rchepu2)
 
 3. Angelo Straight
-- 
+- astrai3@uic.edu
 - [Angelo Straight's github](https://github.com/AngeloStraight)
 
 Team 1 Assignment-1: [Assignment-1](https://uic-cs484.github.io/assignment-1---team-project-proposal-team1/proposal.html) 

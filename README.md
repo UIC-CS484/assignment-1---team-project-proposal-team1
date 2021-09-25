@@ -1,6 +1,6 @@
 ## Team Members
 1. Luke Norris
-- 
+- lnorri4@uic.edu
 - [Luke Norris's github](https://github.com/lnorri4)
 
 2. Raghuram Chepuri

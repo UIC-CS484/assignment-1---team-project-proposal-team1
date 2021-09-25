@@ -87,6 +87,10 @@ li{
     color: inherit;
 }
 
+table, th, td {
+    border:1px solid black;
+}
+
             /* smaller than 1024 pixels */
 @media screen and (max-width: 1024px) {
     body{

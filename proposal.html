@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Example Page on Threat Modeling</title>
-        <link rel="stylesheet" href="./css/style.css" />
-    </head>
-    <body>
-        <div id="container">
-            <header>
-                <h1>N'you's</h1>
-            </header>
-            <div class="middle-row">
-                <section class="middlebox"><h3>Address the following in this section:</h3>
-                    <p>- RESTful API's your team will potentially use? </p>
-                    <p>
-                    * Google News API & Bing News Search API
-                    </p>
-                    
-                    <p>- How might the data you recieve from the API provide insight and information to the end-user</p>
-                    <p>
-                    * Age, topic preferences, and News sources    
-                    </p>
-    
-                    <p>- What data will you collect from authenticated site users? </p>
-                    <p>
-                    * Topics by top ratings
-                    </p>
-    
-                    <P>- Identify all entries/tables you might use in your database along with their respective attributes</P>
-                    <p>
-                    * Source (news company), Topic (Current events, culture, international news, etc...), Publication date, User rating (1 to 5 stars, like or dislike, etc), User info (username, email Id, phone number, age, preferences, etc)   
-                    </p>
-    
-                    </section>
-                    <section class="middlebox"><h3>Address the following in this section:</h3>
-    
-                    <p>- Who will potentially use this site? </p>
-                    <p>    
-                    * Adults (and perhaps teenagers) who are looking to get a cohesive selection of latest news (edited)
-                    </p>
-    
-                    <p>- What are the goals of your sight, provide a minimum of two goal? </p>
-                    <p> 
-                    * Help the user (book mark articles and preferences)
-                    </p>
-                    <p>
-                    * Provide a variety of latest news topics (politics, sports, culture,  current events, international news) (edited)
-                    </p>
-                        
-                    <p>- Why did your team select this topic? </p>
-                    <p>    
-                    * We though that being able to combine multiple APIs into a single app would provide a wide variety of new sources so people won't have to go to so many websites
-                    </p>
-                    </section>
+
+<head>
+    <title>Example Page on Threat Modeling</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>N'you's</h1>
+        </header>
+        <div class="middle-row">
+            <section class="middlebox">
+                <ul class="dashed">
+                    <li>&nbsp; RESTful API's your team will potentially use?
+                        <div class="middlebox-item">Google News API & Bing News Search API</div>
+                    </li>
+                    <li>&nbsp; How might the data you recieve from the API provide insight and information to the
+                        end-user
+                        <div class="middlebox-item">Age, topic preferences, and News sources</div>
+                    </li>
+                    <li>&nbsp; What data will you collect from authenticated site users?
+                        <div class="middlebox-item">Topics by top ratings</div>
+                    </li>
+                    <li>&nbsp; Identify all entries/tables you might use in your database along with their respective
+                        attributes
+                        <div class="middlebox-item">Source (news company), Topic (Current events, culture, international news, etc...),
+                            Publication date, User rating (1 to 5 stars, like or dislike, etc), User info (username,
+                            email Id, phone number, age, preferences, etc)</div>
+                    </li>
+                </ul>
+            </section>
+            <section class="middlebox">
+                <ul class="dashed">
+                    <li>&nbsp; Who will potentially use this site?
+                        <div class="middlebox-item">Adults (and perhaps teenagers) who are looking to get a cohesive selection of latest news (edited)</div>
+                    </li>
+                    <li>&nbsp; What are the goals of your sight, provide a minimum of two goal?
+                        <div class="middlebox-item">Help the user (book mark articles and preferences)</div>
+                        <div class="middlebox-item">Provide a variety of latest news topics (politics, sports, culture, current events, international
+                            news) (edited)</div>
+                    </li>
+                    <li>&nbsp; What data will you collect from authenticated site users?
+                        <div class="middlebox-item">Topics by top ratings</div>
+                    </li>
+                    <li>&nbsp; Why did your team select this topic?
+                        <div class="middlebox-item">We though that being able to combine multiple APIs into a single app would provide a wide variety
+                            of new sources so people won't have to go to so many websites</div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <div class="footer_box">
+                <div class="footer-box-heading">List of Resources Link</div>
+                <ul class="dashed">
+                    <li>&nbsp; Links to Api:
+                        <div class="links"><a href="https://newsapi.org/">News Api</a></div>
+                        <div class="links"><a
+                                href="https://docs.microsoft.com/en-us/bing/search-apis/bing-news-search/overview">Bing
+                                News Api</a></div>
+                        <div class="links"><a href="http://www.espn.com/apis/devcenter/docs/">Espn Api</a></div>
+                    </li>
+                    <li>&nbsp; Links to site you would like to model your site after:
+                        <div class="links"><a href="https://news360.com/home">news 360</a></div>
+                        <div class="links"><a href="https://flipboard.com/">flipboard</a></div>
+                    </li>
+                    <li>&nbsp; Resources:
+                        <div class="links"><a href="https://rapidapi.com/hub">Rapid Api</a></div>
+                        <div class="links"><a href="https://www.postman.com/">Postman</a></div>
+                    </li>
+                </ul>
             </div>
-            <footer>
-               <div class="footer_box">
-                   <div class="footer-box-heading">List of Resources Link</div>
-                    <ul class="dashed">
-                        <li>&nbsp; Links to Api:
-                            <div class="links"><a href="https://newsapi.org/">News Api</a></div>
-                            <div class="links"><a href="https://docs.microsoft.com/en-us/bing/search-apis/bing-news-search/overview">Bing News Api</a></div>
-                            <div class="links"><a href="http://www.espn.com/apis/devcenter/docs/">Espn Api</a></div>
-                        </li>
-                        <li>&nbsp; Links to site you would like to model your site after:
-                            <div class="links"><a href="https://news360.com/home">news 360</a></div>
-                            <div class="links"><a href="https://flipboard.com/">flipboard</a></div>
-                        </li>
-                        <li>&nbsp; Resources:
-                            <div class="links"><a href="https://rapidapi.com/hub">Rapid Api</a></div>
-                            <div class="links"><a href="https://www.postman.com/">Postman</a></div>
-                        </li>
-                    </ul>
-               </div>
-                <div class="footer_box">
-                    <div class="footer-box-heading">Questions + Concerns</div>
-                    <ul class="dashed">
-                        <li>&nbsp; What sign in options should a user have?</li>
-                        <li>&nbsp; How to implement scheduled refresh?</li>
-                    </ul>
-                </div>
-                <div class="footer_box">
-                    <div class="footer-box-heading">Accessibility implementations</div>
-                    <ul class="dashed">
-                        <li>&nbsp; Dark Mode/Light Mode</li>
-                        <li>&nbsp; Text font size change</li>
-                        <li>&nbsp; Mobile/Ipad views</li>
-                    </ul>
-                </div>
-            </footer>
-        </div><!--Closing container-->
-    </body>
+            <div class="footer_box">
+                <div class="footer-box-heading">Questions + Concerns</div>
+                <ul class="dashed">
+                    <li>&nbsp; What sign in options should a user have?</li>
+                    <li>&nbsp; How to implement scheduled refresh?</li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <div class="footer-box-heading">Accessibility implementations</div>
+                <ul class="dashed">
+                    <li>&nbsp; Dark Mode/Light Mode</li>
+                    <li>&nbsp; Text font size change</li>
+                    <li>&nbsp; Mobile/Ipad views</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!--Closing container-->
+</body>
+
 </html>

@@ -38,5 +38,3 @@ We'll follow agile practices. Our team will sync up every day to give the status
 - Jira for managing tasks
 
 ## General Responsibilities
-
-Common responsibilities include picking up a task, 

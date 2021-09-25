@@ -1,137 +1,161 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Group 1 Project Proposal</title>
-    <script>
-            /** JS Code **/
-            var count = 0
-            function myFunction() {
-                if (count % 2 == 0){
-                    document.getElementById("body_id").style.fontSize = "x-large";
-                    ++count;
-                }
-                else{
-                    document.getElementById("body_id").style.fontSize = "medium";
-                    ++count;
-                }
-                
-            }
-        </script>
-    <link rel="stylesheet" href="./css/style.css" />
-</head>
+/** Presentation Logic**/
 
-    <body id="body_id">
-        <div id="container">
-            <header>
-                <h1>N'you's</h1>
-            </header>
-            <div class="middle-row">
-                <section class="middlebox"><h3>Address the following in this section:</h3>
-                    <p>- RESTful API's your team will potentially use? </p>
-                    <p>
-                    * Google News API & Bing News Search API
-                    </p>
-                    
-                    <p>- How might the data you recieve from the API provide insight and information to the end-user</p>
-                    <p>
-                    * Age, topic preferences, and News sources    
-                    </p>
-    
-                    <p>- What data will you collect from authenticated site users? </p>
-                    <p>
-                    * Topics by top ratings
-                    </p>
-                    <p>-Identify all entries/tables in your database along with attributes</p>
-                    <table>
-                        <tr>
-                        <th id="col_user1">user_id</th>
-                        <th id="col_user2">password</th> 
-                        <th id="col_user3">user_name</th>
-                        <th id="col_user4">age</th>
-                        <th id="col_user5">city</th>
-                        </tr>
-                        <tr>
-                        <td>varchar(25)  pk</td>
-                        <td>varchar(12)</td> 
-                        <td>varchar(25)</td>
-                        <td>int</td>
-                        <td>varchar(25)</td>
-                        </tr>
-                    </table>
-                    <br>
-                    <table>
-                        <tr>
-                        <th id="col1">article_id</th>
-                        <th id="col2">title</th> 
-                        <th id="col3">publisher</th>
-                        <th id="col4">year</th>
-                        </tr>
-                        <tr>
-                        <td>varchar(25)  pk</td>
-                        <td>varchar(12)</td> 
-                        <td>varchar(25)</td>
-                        <td>int</td>
-                        </tr>
-                    </table>
-    
-                    </section>
-                    <section class="middlebox"><h3>Address the following in this section:</h3>
-    
-                    <p>- Who will potentially use this site? </p>
-                    <p>    
-                    * Adults (and perhaps teenagers) who are looking to get a cohesive selection of latest news (edited)
-                    </p>
-    
-                    <p>- What are the goals of your sight, provide a minimum of two goal? </p>
-                    <p> 
-                    * Help the user (book mark articles and preferences)
-                    </p>
-                    <p>
-                    * Provide a variety of latest news topics (politics, sports, culture,  current events, international news) (edited)
-                    </p>
-                        
-                    <p>- Why did your team select this topic? </p>
-                    <p>    
-                    * We though that being able to combine multiple APIs into a single app would provide a wide variety of new sources so people won't have to go to so many websites
-                    </p>
-                    </section>
-            </div>
-            <footer>
-               <div class="footer_box">
-                   <div class="footer-box-heading">List of Resources Link</div>
-                    <ul class="dashed">
-                        <li>&nbsp; Links to Api:
-                            <div class="links"><a href="https://newsapi.org/">News Api</a></div>
-                            <div class="links"><a href="https://docs.microsoft.com/en-us/bing/search-apis/bing-news-search/overview">Bing News Api</a></div>
-                            <div class="links"><a href="http://www.espn.com/apis/devcenter/docs/">Espn Api</a></div>
-                        </li>
-                        <li>&nbsp; Links to site you would like to model your site after:
-                            <div class="links"><a href="https://news360.com/home">news 360</a></div>
-                            <div class="links"><a href="https://flipboard.com/">flipboard</a></div>
-                        </li>
-                        <li>&nbsp; Resources:
-                            <div class="links"><a href="https://rapidapi.com/hub">Rapid Api</a></div>
-                            <div class="links"><a href="https://www.postman.com/">Postman</a></div>
-                        </li>
-                    </ul>
-               </div>
-                <div class="footer_box">
-                    <div class="footer-box-heading">Questions + Concerns</div>
-                    <ul class="dashed">
-                        <li>&nbsp; What sign in options should a user have?</li>
-                        <li>&nbsp; How to implement scheduled refresh?</li>
-                    </ul>
-                </div>
-                <div class="footer_box">
-                    <div class="footer-box-heading">Accessibility implementations</div>
-                    <ul class="dashed">
-                        <li>&nbsp; Dark Mode/Light Mode</li>
-                        <li>&nbsp; Text font size change</li>
-                        <li>&nbsp; Mobile/Ipad views</li>
-                    </ul>
-                    <button type="button" onclick="myFunction()">change font size</button>
-                </div>
-            </footer>
-        </div><!--Closing container-->
-    </body>
-</html>
+html { height:100%; }
+
+body { 
+    position:absolute; top:0; bottom:0; right:0; left:0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    background-color: #DADADA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.middlebox{
+    width: 49%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    background-color: #DADADA;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.middlebox .dashed{
+    margin-right: 1rem;
+    color: #707070;
+}
+
+.middlebox li{
+    font-weight: bold;
+    font-size: large;
+}
+
+.middlebox-item{
+    font-weight: lighter;
+    margin-top: 0.5rem;
+    color: #868686;
+}
+
+footer{
+    background-color: #DADADA;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-box-heading{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    color: #5c5c5c;
+}
+
+ul{
+    margin-top: 0.5rem;
+}
+
+ul.dashed {
+    list-style-type: none;
+    color: #636262;
+}
+
+ul.dashed > li:before {
+    content: "-";
+}
+
+li{
+    margin-left: -1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.footer_box{
+    margin: 1.5%;
+    background-color: #BBBBBB;
+    width: 31%;
+}
+
+.links{
+    margin-left: 1rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        background-color:dodgerblue;
+    }
+}
+
+
+/* smaller than 900 pixels */
+@media screen and (max-width: 900px) {
+
+    body{
+        position: relative;
+        background-color: lightblue;
+    }
+
+    #container{
+        width: 90%;
+    }
+
+    header{
+        width: 100%;
+        height: 10vh;
+    }
+
+    .middle-row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middlebox{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer_box{
+        margin: 2.5%;
+        width: 95%;
+    }
+}
+
+/* smaller than 768 pixels */
+@media screen and (max-width: 668px) {
+    body{
+        background-color: lightseagreen;
+    }
+}
